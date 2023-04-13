@@ -90,25 +90,25 @@ I suggest piping screen outputs to an error log by adding:
 Here a list of all subparts:
 ###
 
-rawreadtrimming                   #trimm the provided raw reads and remove adapter using fastp
-domapping                         #mapp the trimmed reads to the provided reference using bwa-mem, samtools and picard.
-testmapping                       #test the mapping qualities with qualimap
-runvariantcalling                 #call variants with your set of mapping files using bcftools mpileup and bcftools call
-filtervariances                   #filter the called variances with bcftools filter and vcftools to get the final vcf file as well as a biallelic SNP file
-ldpruning                         #prune the SNP file for linkage disequilibrium with bctools prune+
-convertvcf                        #convert the SNP file to input files usable for the analysis toolkit SambaR using plink
-testkinship                       #test for potential kinships in your set of individuals using plink
-thinningforsambar                 #thinn the SNP file further if you have too many
-calcdistance                      #calculate raw genetic distances to construct distance based BIONJ trees with SambaR
-dodarwindow                       #identify runs of homozygosity to assess inbreeding using DARWINDOW
-runindivvarcall                   #call individual variants per mapping file using bcftools mpileup and bcftools call
-calchet                           #calculate genome wide heterozygosity using the individual variant files
-calcpi                            #calculate the mean pairwise genetic diversity (pi) using the general_genomics tool box from Simon H Martin
-calcABBABABA                      #estimate gene flow with a window based ABBA BABA test using the general_genomics tool box from Simon H Martin
-angsdtotajima                     #conduct a neutrality test by calculating tajimas D and wattersons theta using ANGSD
-dosnpable                         #create a mappability mask using the SNPable tool, used for demographic moddeling with the MSMC2 framework
-runmsmc2varcall                   #create individual mask and variance files using bcftools and msmc-tools, used for demographic moddeling with the MSMC2 framework
-domsmc2                           #run a demographic moddeling using the MSMC2 framework
+    rawreadtrimming                   #trimm the provided raw reads and remove adapter using fastp
+    domapping                         #mapp the trimmed reads to the provided reference using bwa-mem, samtools and picard.
+    testmapping                       #test the mapping qualities with qualimap
+    runvariantcalling                 #call variants with your set of mapping files using bcftools mpileup and bcftools call
+    filtervariances                   #filter the called variances with bcftools filter and vcftools to get the final vcf file as well as a biallelic SNP file
+    ldpruning                         #prune the SNP file for linkage disequilibrium with bctools prune+
+    convertvcf                        #convert the SNP file to input files usable for the analysis toolkit SambaR using plink
+    testkinship                       #test for potential kinships in your set of individuals using plink
+    thinningforsambar                 #thinn the SNP file further if you have too many
+    calcdistance                      #calculate raw genetic distances to construct distance based BIONJ trees with SambaR
+    dodarwindow                       #identify runs of homozygosity to assess inbreeding using DARWINDOW
+    runindivvarcall                   #call individual variants per mapping file using bcftools mpileup and bcftools call
+    calchet                           #calculate genome wide heterozygosity using the individual variant files
+    calcpi                            #calculate the mean pairwise genetic diversity (pi) using the general_genomics tool box from Simon H Martin
+    calcABBABABA                      #estimate gene flow with a window based ABBA BABA test using the general_genomics tool box from Simon H Martin
+    angsdtotajima                     #conduct a neutrality test by calculating tajimas D and wattersons theta using ANGSD
+    dosnpable                         #create a mappability mask using the SNPable tool, used for demographic moddeling with the MSMC2 framework
+    runmsmc2varcall                   #create individual mask and variance files using bcftools and msmc-tools, used for demographic moddeling with the MSMC2     framework
+    domsmc2                           #run a demographic moddeling using the MSMC2 framework
 
 ###
 
