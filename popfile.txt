@@ -1,0 +1,11 @@
+indiv1	Pop1
+indiv2	Pop1
+indiv3	Pop1
+indiv4	Pop2
+indiv5	Pop2
+indiv6	Pop2
+indiv7	Pop3
+indiv8	Pop3
+indiv9	Pop4
+indiv10	Pop4
+indiv11 Pop4
