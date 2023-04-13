@@ -3,7 +3,7 @@
 
 Building a fully automized pipeline for population genomic and conservation genomic analyses.
 
-A main goal is to create high quality SNP files that can be analyzed and visualized in SambaR (https://github.com/mennodejong1986/SambaR).
+A main goal is to create a high quality SNP set that can be analyzed and visualized in SambaR (https://github.com/mennodejong1986/SambaR).
 
 Can also be used to calculate whole genome statistics like Dxy,HE,pi,tajimasD,wattersonsTheta and test for gene flow using mainly tools
 from Simon H Martin (https://github.com/simonhmartin/genomics_general).
